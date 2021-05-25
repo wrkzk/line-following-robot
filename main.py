@@ -1,3 +1,4 @@
+# Import required libraries and modules
 import check_obstacles, motor_control, os, config, numpy, turns, text_read
 import eyw2_ir_sense as ir
 from adafruit_motorkit import MotorKit
