@@ -62,6 +62,9 @@ def navigate():
         os.system("espeak -a 500 'Node detected' &")
         print(movements[movements_pos])
 
+        if movements_pos == len(movements):
+            keep_going = False
+
         if movements[movements_pos] == "R":
             print('right')
             turns.turn_right()
