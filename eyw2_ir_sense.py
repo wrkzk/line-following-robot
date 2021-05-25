@@ -101,7 +101,7 @@ a_vals_list =[[0,0,0,0,0], [0,0,0,0,0], [0,0,0,0,0]]
 # CAL_PASSES is the number of IR sensors readings taken to perform
 # calibration
 
-CAL_PASSES = 4000
+CAL_PASSES = 8000
 
 # Speed of motors during calibration.
 #kit.motor1.throttle = MOTOR_SPEED
