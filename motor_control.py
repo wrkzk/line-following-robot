@@ -19,22 +19,14 @@ def right():
     kit.motor1.throttle = 0.35
     kit.motor2.throttle = 0
     
-def cw(sleep_time):
+def cw():
     kit.motor1.throttle = 0.5
     kit.motor2.throttle = -0.5
-    #print("Turning clockwise...")
-    time.sleep(sleep_time)
-    kit.motor1.throttle = 0
-    kit.motor2.throttle = 0
-    
-def ccw(sleep_time):
+        
+def ccw():
     kit.motor1.throttle = -0.5
     kit.motor2.throttle = 0.5
-    #print("Turning counterclockwise...")
-    time.sleep(sleep_time)
-    kit.motor1.throttle = 0
-    kit.motor2.throttle = 0
-    
+
 def stop():
     kit.motor1.throttle = 0
     kit.motor2.throttle = 0
