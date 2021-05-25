@@ -20,12 +20,12 @@ def right():
     kit.motor2.throttle = 0
     
 def cw():
-    kit.motor1.throttle = 0.5
-    kit.motor2.throttle = -0.5
+    kit.motor1.throttle = 0.35
+    kit.motor2.throttle = -0.35
         
 def ccw():
-    kit.motor1.throttle = -0.5
-    kit.motor2.throttle = 0.5
+    kit.motor1.throttle = -0.35
+    kit.motor2.throttle = 0.35
 
 def stop():
     kit.motor1.throttle = 0

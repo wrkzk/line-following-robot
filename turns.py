@@ -52,24 +52,25 @@ def correct_back():
     
 def turn_right():
     motor_control.forward()
-    time.sleep(0.4)
+    time.sleep(1)
     motor_control.stop()
     
     motor_control.cw()
-    time.sleep(0.2)
+    time.sleep(0.6)
 
     while True:
         current_ir = ir.read()
-        ir current_ir[0] == 1 or current_ir[1] == 1 or current_ir[2] == 1:
+        if current_ir[0] == 1 or current_ir[1] == 1 or current_ir[2] == 1:
+            print('right turn line found')
             return
     
 def turn_left():
     motor_control.forward()
-    time.sleep(0.4)
+    time.sleep(1)
     motor_control.stop()
     
     motor_control.ccw()
-    time.sleep(0.2)
+    time.sleep(0.6)
 
     while True:
         current_ir = ir.read()
@@ -77,8 +78,10 @@ def turn_left():
             return
 
 def turn_around():
+    motor_control.forward()
+    time.sleep(2)
     motor_control.cw()
-    time.sleep(0.2)
+    time.sleep(0.6)
 
     while True:
         current_ir = ir.read()
