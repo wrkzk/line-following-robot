@@ -55,7 +55,10 @@ def navigate():
         #else:
         
         #print('No line, moving forward')
-        motor_control.forward()
+        
+        #motor_control.forward()
+        kit.motor1.throttle = 0.28
+        kit.motor2.throttle = 0.28
 
     elif current_ir == [1, 1, 1] or current_ir == [0, 1, 1] or current_ir == [1, 1, 0] or current_ir == [1, 0, 1]:
         motor_control.stop()

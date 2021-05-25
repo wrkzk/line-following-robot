@@ -81,7 +81,7 @@ def turn_around():
     motor_control.forward()
     time.sleep(1.75)
     motor_control.cw()
-    time.sleep(0.8)
+    time.sleep(1.3)
 
     while True:
         current_ir = ir.read()
