@@ -4,11 +4,11 @@ kit = MotorKit()
 import time
 
 def forward():
-    kit.motor1.throttle = 0.31
+    kit.motor1.throttle = 0.32
     kit.motor2.throttle = 0.35
     
 def backward():
-    kit.motor1.throttle = -0.31
+    kit.motor1.throttle = -0.32
     kit.motor2.throttle = -0.35
     
 def left():
