@@ -56,7 +56,7 @@ def turn_right():
     motor_control.stop()
     
     motor_control.cw()
-    time.sleep(0.6)
+    time.sleep(0.8)
 
     while True:
         current_ir = ir.read()
@@ -70,7 +70,7 @@ def turn_left():
     motor_control.stop()
     
     motor_control.ccw()
-    time.sleep(0.6)
+    time.sleep(0.8)
 
     while True:
         current_ir = ir.read()
@@ -79,9 +79,9 @@ def turn_left():
 
 def turn_around():
     motor_control.forward()
-    time.sleep(2)
+    time.sleep(1.75)
     motor_control.cw()
-    time.sleep(0.6)
+    time.sleep(0.8)
 
     while True:
         current_ir = ir.read()
