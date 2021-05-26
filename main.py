@@ -7,6 +7,13 @@ from adafruit_motorkit import MotorKit
 kit = MotorKit()
 ir.calibrate()
 
+# Find the line after calibrating
+motor_control.ccw()
+while True:
+    current_ir = ir.read()
+    if current_ir[0] == 1 or current_ir[1] == 1 or current_ir[2] == 1:
+         break
+
 # Define variables used for flow control
 keep_going = True
 motor_stopped = False
