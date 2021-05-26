@@ -1,7 +1,10 @@
+# Import the required libraries
 import eyw2_ir_sense as ir
 
+# Calibrate the infrared sensor
 ir.calibrate()
 
+# Wrapper function that is kind of useless
 def read_ir():
     ir_array = ir.read()
     return ir_array
